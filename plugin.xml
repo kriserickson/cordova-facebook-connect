@@ -27,6 +27,6 @@
         </config-file>
 
         <source-file src="src/android/FacebookConnect.java" target-dir="src/org/apache/cordova/plugins/FacebookConnect" />
-        <source-file src="src/facebook-android-sdk.jar" target-dir="libs/" />
+        <source-file src="src/android/facebook-android-sdk.jar" target-dir="libs/" />
     </platform>
 </plugin>
