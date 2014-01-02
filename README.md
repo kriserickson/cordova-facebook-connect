@@ -42,21 +42,9 @@ Using this plugin requires [Cordova iOS](https://github.com/apache/incubator-cor
 
 ## PLUGIN SETUP FOR ANDROID ##
 
-Using this plugin requires [Cordova Android](https://github.com/apache/incubator-cordova-android).
+Using this plugin requires [Cordova Android](http://cordova.apache.org/).
 
-1. Make sure your Android project has been [updated for Cordova](https://github.com/apache/incubator-cordova-android/blob/master/guides/Cordova%20Upgrade%20Guide.md)
-2. Add the `src/android` folder from this plugin to your projet.
-3. Refresh (fn-F5), right-click on the `facebook-android-sdk.jar` & select `Build path > Add to build path` (the debug version will output to the console).
-3. Add the .js files to your `assets/www` folder on disk, and add reference(s) to the .js files using `<script>` tags in your html file(s)
-
-
-    `<script type="text/javascript" src="/js/plugins/FacebookConnect.js"></script>`
-
-
-4. Add new entry with key `FacebookConnect` and value `org.apache.cordova.plugins.FacebookConnect` to `Plugins` in `res/xml/config.xml`
-
-
-    <plugin name="FacebookConnect" value="org.apache.cordova.plugins.FacebookConnect"/>
+Everything should happen automatically from cordova plugin add command.
 
 
 ## JAVASCRIPT INTERFACE (IOS/ANDROID) ##
