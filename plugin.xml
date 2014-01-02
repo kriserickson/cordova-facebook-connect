@@ -1,25 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
-           id="com.storefront.imagestore"
-      version="0.1.0">
-    <name>Local Images</name>
-    <description>Query Local Images on a device and retrieve their data as dataUrls</description>
-    <license>Apache 2.0 License</license>
-    <keywords>mediastore,cordova,images</keywords>
+           id="org.apache.cordova.plugins.FacebookConnect"
+      version="3.0.4">
 
-    <js-module src="www/imagestore.js" name="imagestore">
-        <clobbers target="ImageStore" />
+    <name>FacebookConnect</name>
+
+    <js-module src="www/FacebookConnect.js" name="FacebookConnect">
+        <clobbers target="FacebookConnect" />
     </js-module>
 
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="LocalImages" >
-                <param name="android-package" value="com.storefront.imagestore.ImageStore"/>
+                <param name="android-package" value="org.apache.cordova.plugins.FacebookConnect.FacebookConnect"/>
             </feature>
         </config-file>
+        
+         <config-file target="AndroidManifest.xml" parent="/manifest/application">
+             <activity android:name="org.apache.cordova.plugins.FacebookConnect"
+                               android:label="@string/app_name">
+                     <intent-filter>
+                     </intent-filter>
+             </activity> 
+        </config-file>
 
-        <source-file src="src/android/ImageStore.java" target-dir="src/com/storefront/imagestore" />
+        <source-file src="src/android/FacebookConnect.java" target-dir="src/org/apache/cordova/plugins/FacebookConnect" />
+        <source-file src="src/facebook-android-sdk.jar" target-dir="libs/" />
     </platform>
 </plugin>
