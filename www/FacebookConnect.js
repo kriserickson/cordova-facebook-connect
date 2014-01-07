@@ -8,7 +8,6 @@
 // MIT Licensed
 
 
-cordova.define("org.apache.cordova.plugins.FacebookConnect", function(require, exports, module) {
 
     var exec = require('cordova/exec');
 
@@ -92,4 +91,4 @@ cordova.define("org.apache.cordova.plugins.FacebookConnect", function(require, e
         }
     }
     
-});
+
