@@ -44,8 +44,11 @@ Using this plugin requires [Cordova iOS](https://github.com/apache/incubator-cor
 
 Using this plugin requires [Cordova Android](http://cordova.apache.org/).
 
-Everything should happen automatically from cordova plugin add command.
+1. Add the cordova plugin (see [Plugin Guide](http://cordova.apache.org/docs/en/3.3.0/guide_cli_index.md.html))
 
+     `cordova plugin add https://github.com/mgcrea/cordova-facebook-connect`
+
+2. Add your Key Hashes (see [Android Getting Started](https://developers.facebook.com/docs/android/getting-started/) for more details).
 
 ## JAVASCRIPT INTERFACE (IOS/ANDROID) ##
 
