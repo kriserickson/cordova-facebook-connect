@@ -29,4 +29,12 @@
         <source-file src="src/android/FacebookConnect.java" target-dir="src/org/apache/cordova/plugins/FacebookConnect" />
         <source-file src="src/android/facebook-android-sdk.jar" target-dir="libs/" />
     </platform>
+    
+    <!-- ios -->
+    <platform name="ios">
+        <plugins-plist key="FacebookConnect" />
+        <resource-dir src="FacebookSDK" />
+        <header-file src="FacebookConnectPlugin.h" />
+        <source-file src="FacebookConnectPlugin.m" />
+    </platform>
 </plugin>
