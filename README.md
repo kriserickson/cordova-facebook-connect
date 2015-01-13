@@ -1,15 +1,18 @@
 # Cordova Facebook Connect Plugin #
-by [Olivier Louvignes](http://olouv.com)
+originally by [Olivier Louvignes](http://olouv.com)
+forked and updated to work with modern Cordova and Facebook 2.2+ API by [Kris Erickson][https://github.com/kriserickson]
+
+###Note: The IOS branch has been untested in over a year but will be updated soon.###
 
 ## DESCRIPTION ##
 
 * This plugin provides a simple way to use Facebook Graph API in Cordova.
 
-* This plugin is built for Cordova >= v2.4.0 with ARC. Both iOS & Android are supported with the same javascript interface.
+* This plugin is built for Cordova >= v3.3.0. Both iOS & Android are supported with the same javascript interface.
 
 * For iOS, this plugin relies on the [Facebook iOS SDK](https://github.com/facebook/facebook-ios-sdk) that is bundled in the `FacebookSDK` folder (licensed under the Apache License, Version 2.0).
 
-* For Android, this plugin relies on the [Facebook Android SDK](https://github.com/facebook/facebook-android-sdk) that is packaged as a .jar in the `libs` folder (licensed under the Apache License, Version 2.0).
+* For Android, this plugin relies uses the included MinimalFacebookSDK which as a JAR is 60K rather than 1.5Megs which the full Facebook SDK compiles to as a JAR.
 
 * Regarding the existing implementation : [phonegap-plugin-facebook-connect](https://github.com/davejohnson/phonegap-plugin-facebook-connect) built by Dave Johnson, this version does not require the Facebook JS sdk (redundant to native sdk). It is also quite easier to use (unified login & initial /me request) and it does support multiple graph requests (strong callback handling).
 
@@ -44,7 +47,7 @@ Using this plugin requires [Cordova iOS](https://github.com/apache/incubator-cor
 
 Using this plugin requires [Cordova Android](http://cordova.apache.org/).
 
-1. Add the cordova plugin (see [Plugin Guide](http://cordova.apache.org/docs/en/3.3.0/guide_cli_index.md.html))
+1. Add the cordova plugin (see [Plugin Guide](http://cordova.apache.org/docs/en/edge/guide_cli_index.md.html))
 
      `cordova plugin add https://github.com/mgcrea/cordova-facebook-connect`
 
@@ -82,16 +85,6 @@ Using this plugin requires [Cordova Android](http://cordova.apache.org/).
         });
 
     });
-
-* Check [source](https://github.com/mgcrea/cordova-facebook-connect/tree/master/FacebookConnect.js) for additional configuration.
-
-## BUGS AND CONTRIBUTIONS ##
-
-Patches welcome! Send a pull request. Since this is not a part of Cordova Core (which requires a CLA), this should be easier.
-
-Post issues on [Github](https://github.com/mgcrea/cordova-facebook-connect/issues)
-
-The latest code (my fork) will always be [here](https://github.com/mgcrea/cordova-facebook-connect/tree/master)
 
 ## LICENSE ##
 
